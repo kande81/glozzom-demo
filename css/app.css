@@ -121,10 +121,6 @@ body {
   background-color: #007bff !important;
 }  
 
-.carousel-item {
-  height: fit-content !important;
-  overflow: hidden !important;
-}
 
 .tes-con {
   position: relative;
