@@ -124,6 +124,8 @@ body {
 
 .tes-con {
   position: relative;
+  height: fit-content;
+
 }
 
 .fa-angle-left {
@@ -134,4 +136,20 @@ body {
 .fa-angle-right {
   position: absolute;
   right: 0px;
+}
+
+/* .testimonial-con {
+  height: 400px !important;
+} */
+
+.testimonial-con .carousel-item {
+  height: fit-content !important;
+}
+
+#car-col {
+  height: fit-content !important;
+}
+
+#testimonials {
+  height: 200px !important;
 }
