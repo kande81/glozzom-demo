@@ -120,3 +120,22 @@ body {
 .blog-card {
   background-color: #007bff !important;
 }  
+
+.carousel-item {
+  height: fit-content !important;
+  overflow: hidden !important;
+}
+
+.tes-con {
+  position: relative;
+}
+
+.fa-angle-left {
+  position: absolute;
+  left: 0px;
+}
+
+.fa-angle-right {
+  position: absolute;
+  right: 0px;
+}

@@ -145,12 +145,13 @@
 
   <!-- TESTIMONIALS -->
   <section id="testimonials" class="p-4 bg-dark text-white">
-    <div class="container">
+    <div class="container tes-con">
       <h2 class="text-center">testimonials</h2>
       <div class="row text-center">
-        <div class="col">
-          <div class="slider">
-            <div>
+        <div class="col col-center">
+          <div class="carousel slide" id="myCarousel" data-ride="carousel">
+            <div class="carousel-inner testimonial-con">
+              <div class="carousel-item active">
               <blockquote class="blockquote">
                 <p class="mb-0">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quaerat.
@@ -160,31 +161,44 @@
                 </footer>
               </blockquote>
             </div>
-            <div>
+              <div class="carousel-item">
               <blockquote class="blockquote">
                 <p class="mb-0">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quaerat.
                 </p>
-                <footer class="blockquote-footer">Sam Smith From
-                  <cite title="Company 2">Company 2</cite>
+                <footer class="blockquote-footer">John Doe From
+                  <cite title="Company 1">Company 2</cite>
                 </footer>
               </blockquote>
             </div>
-            <div>
+            <div class="carousel-item">
               <blockquote class="blockquote">
                 <p class="mb-0">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quaerat.
                 </p>
-                <footer class="blockquote-footer">Meghan Williams From
-                  <cite title="Company 3">Company 3</cite>
+                <footer class="blockquote-footer">John Doe From
+                  <cite title="Company 1">Company 3</cite>
                 </footer>
               </blockquote>
             </div>
+            <a class="carousel-control-prev carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span> -->
+              <i class="fa fa-angle-left fa-lg"></i>
+
+            </a>
+            <a class="carousel-control-next carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span> -->
+              <i class="fa fa-angle-right fa-lg"></i>
+            </a>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+            </div>
+          </div>
+          </div>
+         </section> 
+
 
   <!-- FOOTER -->
   <footer id="main-footer" class="text-center p-4">
@@ -197,6 +211,11 @@
       </div>
     </div>
   </footer>
+
+  <p class="boring-text">Here is some plain old boring text.</p>
+  <p>Here is some normal text that is neither boring nor exciting.</p>
+  <p class="exciting-text">Contributing to MDN is easy and fun.</p>
+  
 
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -211,11 +230,11 @@
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
 
-    $('.slider').slick({
-      infinite: true,
-      slideToShow: 1,
-      slideToScroll: 1
-    });
+    // $('.slider').slick({
+    //   infinite: true,
+    //   slideToShow: 1,
+    //   slideToScroll: 1
+    // });
   </script>
 </body>
 
